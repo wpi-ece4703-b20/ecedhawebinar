@@ -140,7 +140,9 @@ uint16_t processSample(uint16_t s) {
     } else
         dtmfaddsample(x >> (15 - FRACBITS));
 
-    return q15_to_dac14(t697.s1);
+      return q15_to_dac14(t697.s1); // monitor row 1
+//    return q15_to_dac14(t770.s1); // monitor row 2
+//    return q15_to_dac14(t852.s1); // monitor row 3
 }
 
 int main(void) {
